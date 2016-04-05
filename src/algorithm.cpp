@@ -4,7 +4,7 @@ Algorithm::Algorithm(char **argv, int argc) {}
 
 Algorithm::Algorithm(char **argv, int argc, string n) : name(n) {}
 
-bool Algorithm::setVideo(Video *v) { video = v; }
+bool Algorithm::setVideo(Video *v) { video = v; return true; }
 
 const list<pair<float, float> > &Algorithm::getShotBoundary() {
   return shotBoundary;
